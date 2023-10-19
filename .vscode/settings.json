@@ -1,0 +1,8 @@
+{
+    "window.autoDetectColorScheme": true,
+    "accessibility.verbosity.diffEditor": false,
+    "accessibility.verbosity.hover": false,
+    "accessibility.verbosity.inlineChat": false,
+    "css.format.braceStyle": "collapse",
+    "css.format.spaceAroundSelectorSeparator": true
+}

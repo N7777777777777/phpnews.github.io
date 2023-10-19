@@ -1,0 +1,59 @@
+[debug] [2023-10-18T05:46:21.976Z] ----------------------------------------------------------------------
+[debug] [2023-10-18T05:46:21.979Z] Command:       D:\firebase-tools-instant-win.exe C:\Users\HP\.cache\firebase\tools\lib\node_modules\firebase-tools\lib\bin\firebase deploy
+[debug] [2023-10-18T05:46:21.979Z] CLI Version:   12.6.2
+[debug] [2023-10-18T05:46:21.980Z] Platform:      win32
+[debug] [2023-10-18T05:46:21.980Z] Node Version:  v16.16.0
+[debug] [2023-10-18T05:46:21.982Z] Time:          Wed Oct 18 2023 12:46:21 GMT+0700 (Indochina Time)
+[debug] [2023-10-18T05:46:21.982Z] ----------------------------------------------------------------------
+[debug] 
+[debug] [2023-10-18T05:46:22.116Z] > command requires scopes: ["email","openid","https://www.googleapis.com/auth/cloudplatformprojects.readonly","https://www.googleapis.com/auth/firebase","https://www.googleapis.com/auth/cloud-platform"]
+[debug] [2023-10-18T05:46:22.117Z] > authorizing via signed-in user (mennimolitc@gmail.com)
+[debug] [2023-10-18T05:46:22.117Z] [iam] checking project fir-demo-project for permissions ["firebase.projects.get","firebasehosting.sites.update"]
+[debug] [2023-10-18T05:46:22.121Z] >>> [apiv2][query] POST https://cloudresourcemanager.googleapis.com/v1/projects/fir-demo-project:testIamPermissions [none]
+[debug] [2023-10-18T05:46:22.121Z] >>> [apiv2][(partial)header] POST https://cloudresourcemanager.googleapis.com/v1/projects/fir-demo-project:testIamPermissions x-goog-quota-user=projects/fir-demo-project
+[debug] [2023-10-18T05:46:22.121Z] >>> [apiv2][body] POST https://cloudresourcemanager.googleapis.com/v1/projects/fir-demo-project:testIamPermissions {"permissions":["firebase.projects.get","firebasehosting.sites.update"]}
+[debug] [2023-10-18T05:46:23.480Z] <<< [apiv2][status] POST https://cloudresourcemanager.googleapis.com/v1/projects/fir-demo-project:testIamPermissions 200
+[debug] [2023-10-18T05:46:23.480Z] <<< [apiv2][body] POST https://cloudresourcemanager.googleapis.com/v1/projects/fir-demo-project:testIamPermissions {}
+[debug] [2023-10-18T05:46:23.480Z] [iam] error while checking permissions, command may fail: FirebaseError: Authorization failed. This account is missing the following required permissions on project fir-demo-project:
+
+  firebase.projects.get
+  firebasehosting.sites.update
+[debug] [2023-10-18T05:46:23.482Z] >>> [apiv2][query] GET https://firebase.googleapis.com/v1beta1/projects/fir-demo-project [none]
+[debug] [2023-10-18T05:46:23.976Z] <<< [apiv2][status] GET https://firebase.googleapis.com/v1beta1/projects/fir-demo-project 403
+[debug] [2023-10-18T05:46:23.976Z] <<< [apiv2][body] GET https://firebase.googleapis.com/v1beta1/projects/fir-demo-project {"error":{"code":403,"message":"The caller does not have permission","status":"PERMISSION_DENIED"}}
+[debug] [2023-10-18T05:46:23.978Z] HTTP Error: 403, The caller does not have permission
+[debug] [2023-10-18T05:46:24.179Z] FirebaseError: HTTP Error: 403, The caller does not have permission
+    at responseToError (C:\Users\HP\.cache\firebase\tools\lib\node_modules\firebase-tools\lib\responseToError.js:49:12)
+    at RetryOperation._fn (C:\Users\HP\.cache\firebase\tools\lib\node_modules\firebase-tools\lib\apiv2.js:285:77)
+    at processTicksAndRejections (node:internal/process/task_queues:96:5)
+[error] 
+[error] Error: Failed to get Firebase project fir-demo-project. Please make sure the project exists and your account has permission to access it.
+[debug] [2023-10-18T05:46:52.760Z] ----------------------------------------------------------------------
+[debug] [2023-10-18T05:46:52.765Z] Command:       D:\firebase-tools-instant-win.exe C:\Users\HP\.cache\firebase\tools\lib\node_modules\firebase-tools\lib\bin\firebase serve
+[debug] [2023-10-18T05:46:52.766Z] CLI Version:   12.6.2
+[debug] [2023-10-18T05:46:52.766Z] Platform:      win32
+[debug] [2023-10-18T05:46:52.767Z] Node Version:  v16.16.0
+[debug] [2023-10-18T05:46:52.769Z] Time:          Wed Oct 18 2023 12:46:52 GMT+0700 (Indochina Time)
+[debug] [2023-10-18T05:46:52.770Z] ----------------------------------------------------------------------
+[debug] 
+[debug] [2023-10-18T05:46:52.925Z] > command requires scopes: ["email","openid","https://www.googleapis.com/auth/cloudplatformprojects.readonly","https://www.googleapis.com/auth/firebase","https://www.googleapis.com/auth/cloud-platform"]
+[debug] [2023-10-18T05:46:52.926Z] > authorizing via signed-in user (mennimolitc@gmail.com)
+[debug] [2023-10-18T05:46:52.926Z] [iam] checking project fir-demo-project for permissions ["firebase.projects.get"]
+[debug] [2023-10-18T05:46:52.929Z] >>> [apiv2][query] POST https://cloudresourcemanager.googleapis.com/v1/projects/fir-demo-project:testIamPermissions [none]
+[debug] [2023-10-18T05:46:52.929Z] >>> [apiv2][(partial)header] POST https://cloudresourcemanager.googleapis.com/v1/projects/fir-demo-project:testIamPermissions x-goog-quota-user=projects/fir-demo-project
+[debug] [2023-10-18T05:46:52.930Z] >>> [apiv2][body] POST https://cloudresourcemanager.googleapis.com/v1/projects/fir-demo-project:testIamPermissions {"permissions":["firebase.projects.get"]}
+[debug] [2023-10-18T05:46:54.257Z] <<< [apiv2][status] POST https://cloudresourcemanager.googleapis.com/v1/projects/fir-demo-project:testIamPermissions 200
+[debug] [2023-10-18T05:46:54.258Z] <<< [apiv2][body] POST https://cloudresourcemanager.googleapis.com/v1/projects/fir-demo-project:testIamPermissions {}
+[debug] [2023-10-18T05:46:54.258Z] [iam] error while checking permissions, command may fail: FirebaseError: Authorization failed. This account is missing the following required permissions on project fir-demo-project:
+
+  firebase.projects.get
+[debug] [2023-10-18T05:46:54.260Z] >>> [apiv2][query] GET https://firebase.googleapis.com/v1beta1/projects/fir-demo-project [none]
+[debug] [2023-10-18T05:46:54.710Z] <<< [apiv2][status] GET https://firebase.googleapis.com/v1beta1/projects/fir-demo-project 403
+[debug] [2023-10-18T05:46:54.710Z] <<< [apiv2][body] GET https://firebase.googleapis.com/v1beta1/projects/fir-demo-project {"error":{"code":403,"message":"The caller does not have permission","status":"PERMISSION_DENIED"}}
+[debug] [2023-10-18T05:46:54.713Z] HTTP Error: 403, The caller does not have permission
+[debug] [2023-10-18T05:46:54.943Z] FirebaseError: HTTP Error: 403, The caller does not have permission
+    at responseToError (C:\Users\HP\.cache\firebase\tools\lib\node_modules\firebase-tools\lib\responseToError.js:49:12)
+    at RetryOperation._fn (C:\Users\HP\.cache\firebase\tools\lib\node_modules\firebase-tools\lib\apiv2.js:285:77)
+    at processTicksAndRejections (node:internal/process/task_queues:96:5)
+[error] 
+[error] Error: Failed to get Firebase project fir-demo-project. Please make sure the project exists and your account has permission to access it.
